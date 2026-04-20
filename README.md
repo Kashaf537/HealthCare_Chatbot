@@ -65,6 +65,21 @@ Created custom prompt templates including:
 ✅ **Fast inference** - ~2-3 seconds per response  
 ✅ **Good performance** - Comparable to larger models for health Q&A  
 
+Key Findings & Insights
+1. CPU vs GPU Performance
+CPU: 2-5 seconds (acceptable for deployment)
+
+GPU: <1 second (requires paid tier on HF)
+
+Finding: CPU optimization sufficient for MVP
+
+2. TinyLlama vs Larger Models
+TinyLlama (1.1B): Fast, runs anywhere, 85% accuracy
+
+Phi-2 (2.7B): Slightly better accuracy, 2x slower
+
+Finding: TinyLlama offers best speed/accuracy trade-off
+
 ### Model Architecture Details:
 
 ```python
